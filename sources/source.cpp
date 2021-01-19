@@ -225,3 +225,7 @@ int Run_server(int argc, char* argv[]) {
     return EXIT_FAILURE;
   }
 }
+// ./cmake-build-debug/tests 0.0.0.0 8080
+int main(int argc, char* argv[]) {
+  return Run_server(argc, argv);
+}

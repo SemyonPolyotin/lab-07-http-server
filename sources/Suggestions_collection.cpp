@@ -5,6 +5,7 @@
 #include <algorithm>
 
 Suggestions_collection::Suggestions_collection() { suggestions_ = {}; }
+
 void Suggestions_collection::Update(json storage) {
   std::sort(storage.begin(), storage.end(),
             [](const json& a, const json& b) -> bool {
